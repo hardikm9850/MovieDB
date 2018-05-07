@@ -40,10 +40,11 @@ public class PresenterImplTest {
     @Mock
     ConnectionManager connectionManager;
     @Mock
-    ApiService apiService;
-    @Mock
     MovieInteractorImpl movieInteractor;
 
+    /**
+     * To alter Androidschedular and IO Schedular with Schedular.trempoline()
+     */
     @Rule
     public final RxSchedulersOverrideRule mOverrideSchedulersRule = new RxSchedulersOverrideRule();
 

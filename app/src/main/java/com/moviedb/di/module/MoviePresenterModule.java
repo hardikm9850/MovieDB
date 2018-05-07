@@ -21,9 +21,4 @@ public class MoviePresenterModule {
     public MovieContract.View providesMovieContractView(){
         return view;
     }
-
-    @Provides
-    public MovieInteractor providesMovieInteractorImpl(MovieInteractorImpl movieInteractor){
-        return movieInteractor;
-    }
 }
