@@ -1,11 +1,5 @@
 package com.moviedb.ui.test;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.text.TextUtils;
-
-import com.moviedb.contract.AddCardsContract;
-
 import java.util.Calendar;
 
 import javax.inject.Inject;

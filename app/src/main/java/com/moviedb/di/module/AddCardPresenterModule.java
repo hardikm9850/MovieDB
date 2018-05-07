@@ -1,7 +1,5 @@
 package com.moviedb.di.module;
 
-import com.moviedb.contract.AddCardsContract;
-
 import dagger.Module;
 import dagger.Provides;
 

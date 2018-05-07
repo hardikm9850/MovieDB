@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.moviedb.MovieApplication;
 import com.moviedb.di.component.DaggerAddCardComponent;
 import com.moviedb.di.module.AddCardPresenterModule;
-import com.moviedb.contract.AddCardsContract;
 
 import javax.inject.Inject;
 
