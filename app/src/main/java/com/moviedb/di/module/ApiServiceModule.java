@@ -6,6 +6,7 @@ import com.moviedb.api.ApiService;
 
 import java.util.concurrent.TimeUnit;
 
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -42,5 +43,13 @@ public class ApiServiceModule {
     @Provides
     ApiService provideApiService(Retrofit retrofit){
         return retrofit.create(ApiService.class);
+    }
+
+    @Singleton
+    @Provides
+    @Named("apiKey")
+    String provideApiKey(){
+        String API_KEY = "7c67790b259a965357bdf4b03febee52";
+        return API_KEY;
     }
 }

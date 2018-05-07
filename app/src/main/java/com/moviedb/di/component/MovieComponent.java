@@ -1,5 +1,7 @@
 package com.moviedb.di.component;
 
+import android.content.Context;
+
 import com.moviedb.di.module.MoviePresenterModule;
 import com.moviedb.ui.movie.MovieActivity;
 import com.moviedb.di.scope.PerActivity;

@@ -1,6 +1,8 @@
 package com.moviedb.di.module;
 
 import android.app.Application;
+import android.content.Context;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -17,4 +19,8 @@ public class AppModule {
         return application;
     }
 
+    @Provides
+    public Context providesContext(){
+        return application.getApplicationContext();
+    }
 }

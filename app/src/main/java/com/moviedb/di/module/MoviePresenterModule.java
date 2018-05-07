@@ -2,6 +2,8 @@ package com.moviedb.di.module;
 
 import com.moviedb.contract.MovieContract;
 import com.moviedb.di.scope.PerActivity;
+import com.moviedb.ui.movie.MovieInteractor;
+import com.moviedb.ui.movie.MovieInteractorImpl;
 import com.moviedb.ui.movie.PresenterImpl;
 
 import dagger.Module;
@@ -18,5 +20,10 @@ public class MoviePresenterModule {
     @Provides
     public MovieContract.View providesMovieContractView(){
         return view;
+    }
+
+    @Provides
+    public MovieInteractor providesMovieInteractorImpl(MovieInteractorImpl movieInteractor){
+        return movieInteractor;
     }
 }
